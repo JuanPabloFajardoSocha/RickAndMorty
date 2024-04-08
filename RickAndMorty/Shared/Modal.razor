@@ -1,0 +1,69 @@
+﻿@if (MostrarModal)
+{
+    <div class="modal fade show" style="display: block;" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">@ModalTitle</h5>
+                    <div>
+                        <button type="button" @onclick="CerrarModal" class="btn btn-close" data-dismiss="modal" aria-label="Close">
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" @bind=comentario placeholder="Comentario" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" @onclick="EnviarComentario" type="button" id="button-addon2">Enviar</button>
+                    </div>
+                    <hr>
+                    @if (Comentarios is null || Comentarios.Count() <= 0)
+                    {
+                        <p>No hay Comentarios</p>
+                    }
+                    else
+                    {
+                        @foreach (string comentario in Comentarios)
+                        {
+                            <ul>
+                                <li>
+                                    @comentario
+                                    <button class="btn btn-link" style="color:red" @onclick="() => EliminarComentario(comentario)">Eliminar</button>
+                                </li>
+                            </ul>
+                        }
+                    }
+                </div>
+                <div class=" modal-footer">
+                    <button type="button" class="btn btn-secondary" @onclick="CerrarModal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool MostrarModal { get; set; }
+    [Parameter] public string ModalTitle { get; set; }
+    [Parameter] public EventCallback OnCerrarModal { get; set; }
+    private string comentario;
+    private List<string> Comentarios = new List<string>();
+
+    private void CerrarModal()
+    {
+        OnCerrarModal.InvokeAsync();
+        Comentarios.Clear();
+    }
+
+    private void EnviarComentario()
+    {
+        Comentarios.Add(comentario);
+        comentario = "";
+        StateHasChanged();
+    }
+    private void EliminarComentario(string comentario)
+    {      
+        Comentarios.Remove(comentario);
+        StateHasChanged();
+    }
+
+}

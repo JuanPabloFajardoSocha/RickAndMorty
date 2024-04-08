@@ -1,0 +1,56 @@
+﻿<div class="col mt-1">
+    <div class="card">
+        <img src="@Image" class="card-img-top" alt="No Image" />
+        <div class="card-body">
+            <h6 class="card-text"><strong>@Name</strong> </h6>
+            <h6 class="card-text"><strong>@OriginName</strong> </h6>
+            <h6 class="card-text"><strong>@LocationName</strong> </h6>
+        </div>
+        <div class="card-footer">
+            <button style="border:none" @onclick=MeGusta>
+                <img src="sample-data/like2.png" width="30px" />
+            </button> <label style="margin-right:20px">@likeCount</label>
+
+            <button style="border:none" @onclick=NoMeGusta>
+                <img src="sample-data/dislike2.png" width="30px" />
+            </button> <label style="margin-right:20px">@dislikeCount</label>
+
+            <button style="border:none" @onclick=AbrirModal>
+                <img src="sample-data/comentario.png" width="40px" />
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Image { get; set; }
+    [Parameter] public string Name { get; set; }
+    [Parameter] public string OriginName { get; set; }
+    [Parameter] public string LocationName { get; set; }
+    [Parameter] public EventCallback OnLike { get; set; }
+    [Parameter] public EventCallback OnDislike { get; set; }
+    [Parameter] public EventCallback<string> OnOpenModal { get; set; }
+    private int likeCount = 0;
+    private int dislikeCount = 0;
+
+
+
+    private async Task MeGusta()
+    {
+        likeCount++;
+        await OnLike.InvokeAsync();
+    }
+
+    private async Task NoMeGusta()
+    {    
+        dislikeCount++;
+        await OnDislike.InvokeAsync();
+    }
+
+    private void AbrirModal()
+    {        
+        OnOpenModal.InvokeAsync(Name);
+
+    }
+
+}

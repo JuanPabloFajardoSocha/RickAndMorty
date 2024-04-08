@@ -1,0 +1,89 @@
+﻿@page "/"
+@using Newtonsoft.Json;
+@inject HttpClient httpClient
+<PageTitle>Rick and Morty</PageTitle>
+
+@if (characters is null)
+{
+    <p>Empty</p>
+}
+else if (characters.results.Count == 0)
+{
+    <p>No hay datos</p>
+}
+else
+{
+    <div class="card-container">
+        @foreach (var character in characters.results)
+        {
+            <Card Image="@character.image" Name="@character.name" 
+            OriginName="@character.origin.name" 
+            LocationName="@character.location.name" OnLike="MeGusta"           
+            OnDislike="NoMeGusta" OnOpenModal="AbrirModal" />
+        }
+    </div>
+}
+<Modal MostrarModal="@mostrarModal" ModalTitle="@modalTitle" OnCerrarModal="CerrarModal">
+
+</Modal>
+
+
+
+
+@code {
+    public Characters characters { get; set; } = null;
+    private bool mostrarModal = false;
+    private string modalTitle="Comentarios";
+
+
+    protected override Task OnInitializedAsync()
+    {
+        try
+        {
+            getCharacters();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+        return base.OnInitializedAsync();
+    }
+
+    private async void getCharacters()
+    {
+        string apiUrl = "https://rickandmortyapi.com/api/character";
+        HttpResponseMessage response = await httpClient.GetAsync(apiUrl);
+        if (response.IsSuccessStatusCode)
+        {
+            string jsonContent = await response.Content.ReadAsStringAsync();
+            characters = JsonConvert.DeserializeObject<Characters>(jsonContent);
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine("Error en la solicitud");
+        }
+    }
+
+    private void MeGusta()
+    {       
+    }
+
+    private void NoMeGusta()
+    {       
+    }
+
+    private void AbrirModal(string nombre)
+    {    
+        mostrarModal = true;
+        modalTitle = "Comentarios de "+ nombre;
+    }
+
+
+    private void CerrarModal()
+    {
+        mostrarModal = false;
+    }
+
+}

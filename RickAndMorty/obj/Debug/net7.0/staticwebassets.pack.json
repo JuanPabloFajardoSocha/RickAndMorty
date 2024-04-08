@@ -1,0 +1,125 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\obj\\Debug\\net7.0\\compressed\\t51ya16y26.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\obj\\Debug\\net7.0\\scopedcss\\bundle\\RickAndMorty.styles.css",
+      "PackagePath": "staticwebassets\\RickAndMorty.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\comentario.png",
+      "PackagePath": "staticwebassets\\sample-data\\comentario.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\dislike2.png",
+      "PackagePath": "staticwebassets\\sample-data\\dislike2.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\eliminar.png",
+      "PackagePath": "staticwebassets\\sample-data\\eliminar.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\favorito.png",
+      "PackagePath": "staticwebassets\\sample-data\\favorito.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\iconP.png",
+      "PackagePath": "staticwebassets\\sample-data\\iconP.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\like2.png",
+      "PackagePath": "staticwebassets\\sample-data\\like2.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\personajes.jpg",
+      "PackagePath": "staticwebassets\\sample-data\\personajes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Music\\RickAndMorty\\RickAndMorty\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RickAndMorty.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.RickAndMorty.props",
+      "PackagePath": "build\\RickAndMorty.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.RickAndMorty.props",
+      "PackagePath": "buildMultiTargeting\\RickAndMorty.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.RickAndMorty.props",
+      "PackagePath": "buildTransitive\\RickAndMorty.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
